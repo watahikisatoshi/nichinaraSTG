@@ -370,9 +370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  maxY: 4.5
-  minY: -4.5
-  maxX: 0
+  maxY: 4
+  minY: -4
+  maxX: 9
   minX: -9
   lazer: {fileID: 4925983487710109201, guid: f7baadeb95cd34c78b6f9971dbd60245, type: 3}
   attackPoint: {fileID: 1255729388}
@@ -936,7 +936,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.3505487
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1143,9 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d83d9935dbf4e3b942e41520ec0ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellprefab: {fileID: 0}
-  shotspeed: 0
-  shotSound: {fileID: 0}
 --- !u!1 &1641418526
 GameObject:
   m_ObjectHideFlags: 0
