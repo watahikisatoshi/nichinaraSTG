@@ -25,8 +25,14 @@ public class Bossattack : MonoBehaviour
         Destroy(gameObject);
         Destroy(collision.gameObject);
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(this.gameObject);
     }
 }
