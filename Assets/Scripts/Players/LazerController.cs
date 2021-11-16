@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LazerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 10;
+    [SerializeField] private float speed = 200;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class LazerController : MonoBehaviour
     public void Move()
     {
         Vector3 lazerPos = transform.position;
-        lazerPos.x += speed * Time.deltaTime;
+        lazerPos.x += speed  *Time.deltaTime;
         transform.position = lazerPos;
     }
 

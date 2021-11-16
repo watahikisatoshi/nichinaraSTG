@@ -86,7 +86,19 @@ public class PlayerContller : MonoBehaviour
                 Instantiate(lazer, attackPoint.position, Quaternion.identity);
                 canAttack = false;
                 attackTime = 0f;
+
+                
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+        Destroy(collision.gameObject);
+    }
+
+
+
 }
+
