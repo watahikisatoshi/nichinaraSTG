@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerContller : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerContller : MonoBehaviour
     void Start()
     {
         currentAttackTime = attackTime;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
